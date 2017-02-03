@@ -1,16 +1,16 @@
 {
-  "name": "cazinge.github.io",
+  "name": "yshin4.github.io",
   "version": "0.0.0",
-  "description": "Eddie Azinge's Website",
+  "description": "Jen Shin's Website",
   "scripts": {
     "start": "webpack-dev-server -d --inline --host 0.0.0.0 --history-api-fallback --progress",
     "publish": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cazinge/cazinge.github.io"
+    "url": "git+https://github.com/yshin4/yshin4.github.io"
   },
-  "author": "Eddie Azinge",
+  "author": "Jen Shin",
   "license": "MIT",
   "dependencies": {
     "react": "^15.4.1",
