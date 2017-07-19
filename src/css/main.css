@@ -1,0 +1,36 @@
+#header {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+#profile{
+  background-color: #fdc9d3;
+  background-attachment: scroll;
+  background-position: top;
+  background-size: auto;
+  height: 60%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#profile-picture{
+  left: 10em;
+  top: 1.5em;
+  padding: 8em;
+  width: 10%;
+  height: 20%;
+  border-radius:50%;
+  position: fixed;
+  background-color: white;
+}
+
+
+#contact{
+  text-align: right;
+  padding: 8em;
+  color: rgba(255, 255, 255, 0.5);
+}
