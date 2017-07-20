@@ -10,7 +10,7 @@
   background-attachment: scroll;
   background-position: top;
   background-size: auto;
-  height: 60%;
+  height: 100%;
   left: 0;
   position: fixed;
   top: 0;
@@ -21,9 +21,9 @@
 #profile-picture{
   border-style: solid;
   border-width: 5px;
-  border-color: rgba(9, 129, 170, 0.5);
-  left: 10em;
-  top: 1.3em;
+  border-color: rgba(4, 59, 78, 0.3);
+  left: 8em;
+  top: 4em;
   padding: 8em;
   width: 10%;
   height: 20%;
@@ -43,40 +43,62 @@
   text-align: right;
   position: fixed;
   padding: 2em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 #contact{
-  padding: 8em;
-  margin-left: -5em;
-  margin-top: 3em;
+  padding: 6em;
+  padding-top: 8em;
+  margin-left: -4em;
+  margin-top: 2em;
 }
 
-button{
+/* button{
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 1);
   color: white;
-  padding: 60px 60px;
+  padding: 50px 50px;
   margin: 1em;
   border: none;
+  position: relative;
+  overflow: visible;
+} */
+
+.fa {
+  font-size: 50px !important;
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 18px;
+  border-radius: 50%;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
 }
 
-button:hover{
-  opacity: 70%;
+.fa:hover{
+  opacity: 0.7;
 }
 
-#github{
-  background-color: rgba(248, 240, 129, 1);
+.fa-github{
+  background-color: rgba(201, 124, 248, 1);
+  font-size: 50px;
 }
 
-#linkedin{
-  background-color: rgba(129, 217, 248, 1)
+.fa-linkedin{
+  background-color: rgba(119, 169, 248, 1);
 }
 
-#email{
+.fa-envelope{
   background-color: rgba(248, 129, 129, 1);
 }
 
-#phone{
-  background-color: rgba(129, 248, 133, 1);
+.fa-phone{
+  background-color: rgba(248, 237, 119, 1);
+}
+
+.fa-sticky-note-o{
+  background-color: rgba(115, 217, 123, 1);
 }
