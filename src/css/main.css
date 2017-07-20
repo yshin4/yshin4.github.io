@@ -5,16 +5,30 @@
   display: flex;
 }
 
+.layer{
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(3, 44, 58, 0.3);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #profile{
-  background-color: rgba(3, 44, 58, 1);
+  background: url('../images/city.jpg');
+  background-repeat: no-repeat;
+  background-color: rgba(3, 44, 58, 0.3);
+  background-size: container;
+  height: 100%;
+  width: 100%;
   background-attachment: scroll;
   background-position: top;
-  background-size: auto;
-  height: 100%;
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%;
 }
 
 
@@ -22,13 +36,14 @@
   border-style: solid;
   border-width: 5px;
   border-color: rgba(4, 59, 78, 0.3);
-  left: 8em;
-  top: 4em;
+  float: left;
+  margin-left: 8em;
+  margin-top: 4em;
   padding: 8em;
   width: 10%;
   height: 20%;
+  position: absolute;
   border-radius:50%;
-  position: fixed;
   background-color: white;
 }
 
@@ -43,7 +58,7 @@
   text-align: right;
   position: fixed;
   padding: 2em;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #contact{
@@ -84,19 +99,23 @@
 
 .fa-github{
   background-color: rgba(201, 124, 248, 1);
+  background-color: rgba(31, 63, 86, 1);
   font-size: 50px;
 }
 
 .fa-linkedin{
   background-color: rgba(119, 169, 248, 1);
+  background-color: rgba(43, 88, 120, 1);
 }
 
 .fa-envelope{
   background-color: rgba(248, 129, 129, 1);
+  background-color: rgba(55, 113, 154, 1);
 }
 
 .fa-phone{
   background-color: rgba(248, 237, 119, 1);
+  background-color: rgba(71, 140, 189, 1);
 }
 
 .fa-phone:hover ~ #phone-info{
@@ -105,6 +124,7 @@
 
 .fa-download{
   background-color: rgba(115, 217, 123, 1);
+  background-color: rgba(101, 159, 200, 1);
 }
 
 .info{
