@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Jen Shin</title>
@@ -45,12 +45,14 @@
   </div>
 
   <div class="row" id="profile">
-    <div class="col-3" id="profile-picture">
+    <div id="profile-picture-container">
+      <div id="profile-picture">
+      </div>
     </div>
-    <div class="col-6" id="intro">
+    <div id="intro">
       <div class="row" id="name">
-        <h1><strong> <font size="7">H</font>i, my name is
-          <b><font size="13" color="white" style="opacity:1">Jen Shin</font></b>.
+        <h1><strong>Hi, my name is
+          <b><span id="full-name">Jen Shin</span></b>.
           Nice to meet you! </strong></h1>
       </div>
       <div class="row" id="contact">
@@ -74,7 +76,10 @@
 
   <div class="row">
     <div id="aboutSection">
-      &nbsp; 
+      <div id="about-picture">
+      </div>
+      <div id="about-summary">
+      </div>
     </div>
   </div>
 

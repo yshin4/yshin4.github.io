@@ -56,6 +56,15 @@ html{
   width: 100%;
 }
 
+#profile-picture-container{
+  float: left;
+  width: 30%;
+  display: flex;
+  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
+
 
 #profile-picture{
   border-style: solid;
@@ -63,32 +72,37 @@ html{
   border-color: rgba(4, 59, 78, 0.3);
   float: left;
   padding: 10em;
-  margin: 5em;
-  width: 60px;
-  height: 60px;
+  height: 8vw;
+  width: 8vw;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50%;
   border-radius:50%;
   background-color: white;
-  margin-right: 1em;
+  margin: 0 auto;
 }
 
 #intro{
   float: left;
-  margin-top: 2em;
+  width: 55%;
+  padding-top: 5%;
 }
 
 #name{
-  float: left;
   text-align: left;
-  padding: 2em;
-  margin-top: 2em;
   color: rgba(255, 255, 255, 0.7);
-  margin-left: 4em;
+  padding: 1em;
+  font-size: 1.2em;
+  padding-bottom: 8%;
+}
+
+#full-name{
+  font-size: 1.3em;
+  opacity: 1;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 #contact{
-  float: left;
-  padding: 6em;
-  padding-top: 1em;
+  margin-left: 3em;
 }
 
 #buttons{
@@ -115,7 +129,7 @@ html{
 }
 
 .fa {
-  font-size: 50px !important;
+  font-size: 3em !important;
   padding: 20px;
   width: 50px;
   text-align: center;
@@ -173,7 +187,8 @@ html{
   margin-right: auto;
   margin-left: auto;
   margin-top: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-right: 4em;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 25px;
   height: 30px;
   width: 80%;
