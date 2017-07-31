@@ -49,7 +49,6 @@ html{
   /*box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);*/
 }
 
-
 #profile{
   float: left;
   height: 80%;
@@ -77,8 +76,11 @@ html{
   -moz-border-radius: 50px;
   -webkit-border-radius: 50%;
   border-radius:50%;
-  background-color: white;
   margin: 0 auto;
+  background-image: url(../images/ppC.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
 }
 
 #intro{
@@ -199,8 +201,9 @@ html{
 }
 
 #aboutSection{
-  background-color: grey;
-  height: 500px;
+  border-top: black solid 20px;
+  background-color: white;
+  height: 650px;
   width: 100vw;
   position: relative;
   left: 50%;
@@ -208,10 +211,25 @@ html{
   margin-left: -50vw;
   margin-right: -50vw;
   overflow: hidden;
+  text-align: center;
+  font-size: 30px;
+}
+
+#about-picture{
+  align-items: center;
+  float: left;
+  width: 50%;
+}
+
+#about-summary{
+  padding: 2em;
+  float: left;
+  color: rgba(0, 0, 0, 1);
+  width: 40%;
 }
 
 #work{
-  background-color: white;
+  background-color: rgba(0, 0, 0, 1);
   width: 100vw;
   position: relative;
   left: 50%;
@@ -226,7 +244,6 @@ html{
   text-align: center;
   padding: 1em;
   margin: 1px;
-  border: 1px solid black;
   height: 500px;
   width: 30.94%;
   max-width: 33%
