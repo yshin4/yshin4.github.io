@@ -95,7 +95,6 @@ html{
   padding: 1em;
   font-size: 1.5em;
   padding-bottom: 8%;
-  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
 }
 
 #full-name{
@@ -251,7 +250,7 @@ html{
 
 #about-summary{
   padding: 2em;
-  margin-top: -1.8em;
+  margin-top: -0.5em;
   float: left;
   color: rgba(0, 0, 0, 1);
   width: 40%;
@@ -273,9 +272,38 @@ html{
 .itemBox{
   float: left;
   text-align: center;
-  padding: 1em;
-  margin: 1px;
-  height: 500px;
-  width: 30.94%;
-  max-width: 33%
+  height: 400px;
+  width: 25%;
+}
+
+#i1{
+  background-color: rgba(32, 58, 64, 1);
+}
+
+#i2{
+  background-color: rgba(41, 96, 112, 1);
+}
+
+#i3{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#i4{
+  background-color: rgba(103, 121, 126, 1);
+}
+
+#i5{
+  background-color: rgba(11, 86, 127, 1);
+}
+
+#i6{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#i7{
+  background-color: rgba(63, 74, 80, 1);
+}
+
+#i8{
+  background-color: rgba(41, 96, 112, 1);
 }
