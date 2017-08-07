@@ -1,128 +1,63 @@
-#header {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.col-3 {
-  width: 33.33%;
-}
-
-.col-6 {
-  width: 66.66%;
-}
-
-/* layer not in use*/
-.layer{
-  background-color: rgba(255, 255, 255, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
-  background-color: rgba(3, 44, 58, 0.3);
-  background: -moz-linear-gradient(top,  rgba(255, 255, 255, 0) 0%,  rgba(255, 255, 255, 0.7) 70%); /* FF3.6+ */
-  background: -webkit-linear-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0)), color-stop(100%,rgba(255, 255, 255, 1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0)', endColorstr='rgba(255, 255, 255, 1)',GradientType=0 ); /* IE6-9 */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-html{
-  background: url('../images/city.jpg');
-  -webkit-background-size: cover; /* For WebKit*/
-  -moz-background-size: cover;    /* Mozilla*/
-  -o-background-size: cover;      /* Opera*/
-  background-size: cover;         /* Generic*/
-  /*background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url('../images/city.jpg');*/
-  background-repeat: no-repeat;
-  /*background-color: rgba(3, 44, 58, 0.3);*/
-  background-color: rgba(0, 0, 0, 1);
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-position: left top, right bottom;
-  overflow-x: hidden;
-  /*box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);*/
-}
-
-body{
-  height: 100%;
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
 #profile{
-  float: left;
-  height: 80%;
+  height: 500px;
   width: 100%;
+  background-color: rgba(122, 190, 220, 1);
+  position: relative;
 }
 
-#profile-picture-container{
+#pp{
+  width: 40%;
   float: left;
-  width: 30%;
-  display: flex;
-  padding: 5%;
-  padding-top: 5%;
-  padding-bottom: 6%;
 }
-
 
 #profile-picture{
-  border-style: solid;
-  border-width: 5px;
-  border-color: rgba(4, 59, 78, 0.3);
-  float: left;
-  padding: 10em;
-  height: 8vw;
-  width: 8vw;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50%;
-  border-radius:50%;
-  margin: 0 auto;
-  background-image: url(../images/ppC.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
+  padding: 2em;
+  padding-right: 0;
+  padding-top: 6em;
 }
 
 #intro{
+  right: 0;
+  bottom: 0;
   float: left;
-  width: 55%;
-  padding-top: 5%;
+  position: absolute;
+  height: 349px;
 }
 
 #name{
-  text-align: left;
   color: rgba(255, 255, 255, 0.8);
-  padding: 1em;
-  font-size: 1.5em;
-  padding-bottom: 8%;
+  font-size: 2em;
+  text-indent: -2em;
 }
 
 #full-name{
-  font-size: 1.7em;
-  opacity: 1;
+  font-size: 4em;
   color: rgba(255, 255, 255, 1.0);
 }
 
-#welcome{
-  margin-left: 4em;
+.purpleText{
+  color: rgba(215, 183, 231, 1);
 }
 
 #contact{
-  margin-left: 3em;
+  top: 0;
+  right: 0;
+  position: absolute;
+  float: left;
+  padding: 2em;
 }
+
 
 #buttons{
   display: table;
-  width: 100%;
-  margin-bottom: 10%;
+  width: 60%;
+  margin-top: 6.5em;
+  margin-bottom: 5em;
 }
 
 #buttons span{
@@ -133,21 +68,22 @@ body{
 button{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  color: rgba(122, 190, 220, 1);
   font-size: 30px;
   text-align: center;
-  border: solid 3px white;
+  border: solid 5px rgba(122, 190, 220, 1);
   width: 230px;
   height: 70px;
   display: inline-block;
 }
 
 button:hover{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(122, 190, 220, 0.2);
 }
 
 button:active{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(122, 190, 220, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .fa {
@@ -158,212 +94,12 @@ button:active{
   text-decoration: none;
   margin: 5px 18px;
   border-radius: 50%;
-  color: white;
-  border-color: white;
-  border-width: 2px;
-  border-style: solid;
-}
-
-/*.fa:hover{
-  opacity: 0.7;
-}*/
-
-.fa-github{
-  background-color: rgba(201, 124, 248, 1);
-  background-color: rgba(31, 63, 86, 1);
-  background-color: rgba(142, 158, 169, 0.7);
-  font-size: 50px;
-}
-
-.fa-github:hover{
-  background-color: rgba(142, 158, 169, 1);
-}
-
-.fa-linkedin{
-  background-color: rgba(119, 169, 248, 1);
-  background-color: rgba(43, 88, 120, 1);
-  background-color: rgba(149, 172, 188, 0.7);
-}
-
-.fa-linkedin:hover{
-  background-color: rgba(149, 172, 188, 1);
-}
-
-.fa-envelope{
-  background-color: rgba(248, 129, 129, 1);
-  background-color: rgba(55, 113, 154, 1);
-  background-color: rgba(152, 182, 203, 0.7);
-}
-
-.fa-envelope:hover{
-  background-color: rgba(152, 182, 203, 1);
-}
-
-.fa-phone{
-  background-color: rgba(248, 237, 119, 1);
-  background-color: rgba(71, 140, 189, 1);
-  background-color: rgba(174, 204, 226, 0.7);
-}
-
-.fa-phone:hover{
-  background-color: rgba(174, 204, 226, 1);
-}
-
-
-/*.fa-phone:hover ~ #phone-info{
-  visibility: visible;
-}*/
-
-.fa-download{
-  background-color: rgba(115, 217, 123, 1);
-  background-color: rgba(101, 159, 200, 1);
-  background-color: rgba(192, 216, 233, 0.7);
-}
-
-.fa-download:hover{
-  background-color: rgba(192, 216, 233, 1);
-}
-
-/*.info{
-  visibility: hidden;
-  padding: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 40px;
-  margin-right: 4em;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 25px;
-  height: 30px;
-  width: 80%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 30px;
-  color: gray;
-  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
-}*/
-
-#about-div{
-  border-top: rgba(49, 53, 55, 1) solid 20px;
-  background-color: white;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
-  text-align: center;
-  font-size: 25px;
-  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
-}
-
-#stroke1{
-  border-bottom: rgba(0, 0, 0, 0.8) 3px solid;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1em;
-  margin-bottom: 1em;
-}
-
-#beachPic{
-  max-height: 400px;
-  border: solid black 4px;
-/*  border: 10px solid transparent;
-  -webkit-border-image: url(../images/border.png) 20% round; /* Safari 3.1-5 */
-/*  -o-border-image: url(../images/border.png) 20% round; /* Opera 11-12.1 */
-/*  border-image: url(../images/border.png) 49% round; */
-}
-
-#about-picture{
-  padding: 1em;
-  margin: 0 auto;
-  display: block;
-}
-
-#about-summary{
-  padding: 2em;
-  padding-top: 0;
-  width: 48%;
-  margin: 0 auto;
-  color: rgba(0, 0, 0, 1);
-  text-align: left;
-  display: block;
-  text-indent: 3em;
-}
-
-#project-div{
-  background-color: rgba(0, 0, 0, 1);
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
   color: rgba(255, 255, 255, 1);
-  font-size: 25px;
-  text-align: center;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-#stroke2{
-  border-bottom: rgba(255, 255, 255, 0.6) 3px solid;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -1em;
-  margin-bottom: 1em;
-}
-
-.itemBox{
-  text-align: center;
-  height: 400px;
-  width: 28%;
-  background-color: rgba(255, 255, 255, 1);
-  margin: 1em;
-  display: inline-block;
-}
-
-#tag{
-  background-color: rgba(0, 0, 0, 1);
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  height: 300px;
-  overflow: hidden;
-}
-
-/*#i1{
+.fa:hover{
+  color: rgba(122, 190, 220, 1);
   background-color: rgba(255, 255, 255, 1);
 }
-
-#i2{
-  background-color: rgba(49, 53, 55, 1);
-}
-
-#i3{
-  background-color: rgba(255, 255, 255, 1);
-}
-
-#i4{
-  background-color: rgba(49, 53, 55, 1);
-}
-
-#i5{
-  background-color: rgba(49, 53, 55, 1);
-}
-
-#i6{
-  background-color: rgba(255, 255, 255, 1);
-}
-
-#i7{
-  background-color: rgba(0, 0, 0, 1);
-}
-
-#i8{
-  background-color: rgba(255, 255, 255, 1);
-}*/
