@@ -38,16 +38,23 @@
 
 html{
   background: url('../images/city.jpg');
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover;    /* Mozilla*/
+  -o-background-size: cover;      /* Opera*/
+  background-size: cover;         /* Generic*/
   /*background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url('../images/city.jpg');*/
   background-repeat: no-repeat;
   /*background-color: rgba(3, 44, 58, 0.3);*/
   background-color: rgba(0, 0, 0, 1);
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   background-position: left top, right bottom;
-  overflow: visible;
-  overflow-x:hidden
+  overflow-x: hidden;
   /*box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);*/
+}
+
+body{
+  height: 100%;
 }
 
 #profile{
@@ -235,7 +242,7 @@ button:active{
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
 }*/
 
-#aboutSection{
+#about-div{
   border-top: rgba(49, 53, 55, 1) solid 20px;
   background-color: white;
   width: 100vw;
@@ -277,7 +284,7 @@ button:active{
 #about-summary{
   padding: 2em;
   padding-top: 0;
-  width: 50%;
+  width: 48%;
   margin: 0 auto;
   color: rgba(0, 0, 0, 1);
   text-align: left;
@@ -285,7 +292,7 @@ button:active{
   text-indent: 3em;
 }
 
-#work{
+#project-div{
   background-color: rgba(0, 0, 0, 1);
   width: 100vw;
   position: relative;
@@ -315,6 +322,18 @@ button:active{
   background-color: rgba(255, 255, 255, 1);
   margin: 1em;
   display: inline-block;
+}
+
+#tag{
+  background-color: rgba(0, 0, 0, 1);
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 300px;
+  overflow: hidden;
 }
 
 /*#i1{

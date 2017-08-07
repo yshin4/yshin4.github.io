@@ -1,11 +1,17 @@
-console.log("CALLED");
 
-$("#about").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#aboutSection").offset().top},
+// $(document).ready(function(){
+// alert("Hello World");
+// });
+
+$("#about").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#about-div").offset().top},
         'slow');
 });
 
-$("button").click(function(){
-  alert("WOOF");
+
+$("#project").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#project-div").offset().top},
+        'slow');
 });
