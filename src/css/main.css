@@ -1,47 +1,33 @@
+
+
 html, body {
   padding: 0;
   margin: 0;
 }
 
 #profile{
-  height: 500px;
-  width: 100%;
   background-color: rgba(122, 190, 220, 1);
-  position: relative;
-}
-
-#pp{
-  width: 40%;
-  float: left;
+  height: 500px;
 }
 
 #profile-picture{
   padding: 2em;
-  padding-right: 0;
-  padding-top: 6em;
-}
-
-#intro{
-  right: 0;
-  bottom: 0;
-  float: left;
-  position: absolute;
-  height: 349px;
+  padding-bottom: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 #name{
   color: rgba(255, 255, 255, 0.8);
-  font-size: 2em;
-  text-indent: -2em;
+  /*height: 17.2vw;*/
+  height: 265px;
+  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
 }
 
 #full-name{
-  font-size: 4em;
+  font-size: 12vw;
   color: rgba(255, 255, 255, 1.0);
-}
-
-.purpleText{
-  color: rgba(215, 183, 231, 1);
+  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
 }
 
 #contact{
@@ -52,37 +38,36 @@ html, body {
   padding: 2em;
 }
 
-
 #buttons{
-  display: table;
-  width: 60%;
-  margin-top: 6.5em;
-  margin-bottom: 5em;
-}
-
-#buttons span{
-  display: table-cell;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 button{
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 1);
   color: rgba(122, 190, 220, 1);
-  font-size: 30px;
   text-align: center;
   border: solid 5px rgba(122, 190, 220, 1);
-  width: 230px;
-  height: 70px;
-  display: inline-block;
+  width: 280px;
+  height: 90px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 4px;
 }
 
 button:hover{
-  background-color: rgba(122, 190, 220, 0.2);
+  background-color: rgba(122, 190, 220, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 button:active{
-  background-color: rgba(122, 190, 220, 1);
+  background-color: rgba(122, 190, 220, 0.8);
   color: rgba(255, 255, 255, 1);
 }
 
@@ -92,7 +77,6 @@ button:active{
   text-align: center;
   font-size: 25px;
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
-  margin-top: 10%;
   padding-top: 2em;
   padding-bottom: 2em;
   color: rgba(122, 190, 220, 1);
@@ -137,11 +121,8 @@ button:active{
 .itemBox{
   text-align: center;
   height: 450px;
-  width: 28%;
   background-color: rgba(255, 255, 255, 1);
-  margin: 1em;
-  display: inline-block;
-  vertical-align:top;
+  margin: 1.6vw;
 }
 
 #i1-image{
@@ -149,7 +130,8 @@ button:active{
   vertical-align: middle;
   height: 250px;
   width: 100%;
-  background-color: white;
+  background-image: url('../images/grn.png') contain 100%;
+  background-color: black;
 }
 
 #i1-description{

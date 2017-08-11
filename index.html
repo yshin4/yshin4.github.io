@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/main.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Jen Shin</title>
@@ -46,23 +47,20 @@
   <div class="layer">
   </div>
 
-  <div id="profile">
-    <div id="pp">
+  <div class="w3-row-padding w3-display-container" id="profile">
+    <div class="w3-col w3-mobile" style="width:40%">
       <img src="src/images/mePB.png" alt="drawing of me" id="profile-picture">
     </div>
-
-    <div id="intro">
-      <div id="name">
-        <h1><strong>Welcome to my website, I'm<br>
-          <span id="full-name">Jen Shin</span></strong></h1>
-      </div>
+    <div class="w3-col w3-mobile w3-display-bottomright" style="width:60%" id="name">
+      <h1><strong>Welcome to my website, I'm<br>
+        <span id="full-name">Jen Shin</span></strong></h1>
     </div>
   </div>
 
   <div id="buttons">
-    <span><button type="button" id="about">About</button></span>
-    <span><button type="button" id="project">Project</button></span>
-    <span><button type="button" id="art">Art</button></span>
+    <span><button class="w3-mobile" type="button" id="about">About</button></span>
+    <span><button class="w3-mobile" type="button" id="project">Project</button></span>
+    <span><button class="w3-mobile" type="button" id="art">Art</button></span>
   </div>
 
   <div id="about-div">
@@ -82,19 +80,21 @@
 
   <div id="project-div">
     <h1>Project</h1>
-    <div class="itemBox" id="i1">
-      <div id="i1-image">
-        <img src="src/images/grn.png">
+    <div class="w3-row-padding">
+      <div class="w3-col w3-mobile itemBox" style="width:30%" id="i1">
+        <div id="i1-image">
+          <img src="src/images/grn.png">
+        </div>
+        <div id="i1-description">
+          GRNsight
+        </div>
       </div>
-      <div id="i1-description">
-        GRNsight
+      <div class="w3-col w3-mobile itemBox" style="width:30%" id="i2">
+        Yahoo Weather API
       </div>
-    </div>
-    <div class="itemBox" id="i2">
-      Yahoo Weather API
-    </div>
-    <div class="itemBox" id="i3">
-      Box Draw: Touch App
+      <div class="w3-col w3-mobile itemBox" style="width:30%" id="i3">
+        Box Drawing Touch App
+      </div>
     </div>
     <div class="itemBox" id="i4">
     </div>
