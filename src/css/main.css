@@ -1,42 +1,42 @@
-
-
-html, body {
-  padding: 0;
-  margin: 0;
+@media (max-width: 480px) {
+  #intro{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1em;
+    margin-top: 50vw;
+  }
+  html{
+    background: orange;
+  }
 }
 
-#profile{
-  background-color: rgba(122, 190, 220, 1);
-  height: 500px;
+#header{
+  background: rgba(93, 80, 176, 1);
+  text-align: center;
+  font-style: italic;
 }
 
-#profile-picture{
-  padding: 2em;
-  padding-bottom: 0;
-  max-width: 100%;
-  height: auto;
+#header-name{
+  font-family: 'Dancing Script', 'Times New Roman';
+  font-size: 4em;
+  color: rgba(255, 255, 255, 1);
 }
 
-#name{
-  color: rgba(255, 255, 255, 0.8);
-  /*height: 17.2vw;*/
-  height: 265px;
-  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
+#city{
+  background-image: url(../images/cityPurple.png);
+  background-size: cover;
+  width: 100%;
+  height: 670px;
 }
 
-#full-name{
-  font-size: 12vw;
-  color: rgba(255, 255, 255, 1.0);
-  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
+#intro{
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2vw;
 }
 
-#contact{
-  top: 0;
-  right: 0;
-  position: absolute;
-  float: left;
-  padding: 2em;
+.georgia{
+  font-family: 'Georgia';
 }
+
 
 #buttons{
   width: 100%;
@@ -44,16 +44,15 @@ html, body {
   justify-content: space-around;
   font-size: 2em;
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 520px;
 }
 
 button{
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 1);
-  color: rgba(122, 190, 220, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 1);
   text-align: center;
-  border: solid 5px rgba(122, 190, 220, 1);
+  border: solid 5px rgba(255, 255, 255, 1);
   width: 280px;
   height: 90px;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -62,25 +61,27 @@ button{
 }
 
 button:hover{
-  background-color: rgba(122, 190, 220, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(93, 80, 176, 1);
 }
 
 button:active{
-  background-color: rgba(122, 190, 220, 0.8);
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(93, 80, 176, 1);
 }
+
 
 #about-div{
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.6vw;
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
   padding-top: 2em;
   padding-bottom: 2em;
   color: rgba(122, 190, 220, 1);
 }
+
 
 #about-div:before, #about-div:after {
   content: "";
@@ -107,6 +108,7 @@ button:active{
   text-indent: 3em;
   color: white;
 }
+
 
 #project-div{
   width: 100%;
@@ -138,22 +140,4 @@ button:active{
   height: 200px;
   background-color: rgba(122, 190, 220, 1);
   color: white;
-}
-
-.fa {
-  font-size: 3em !important;
-  padding: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 18px;
-  border-radius: 50%;
-  color: rgba(255, 255, 255, 1);
-  border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.fa:hover{
-  color: rgba(122, 190, 220, 1);
-  background-color: rgba(255, 255, 255, 1);
 }
