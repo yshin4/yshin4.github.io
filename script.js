@@ -15,3 +15,10 @@ $("#project").click(function(){
         scrollTop: $("#project-div").offset().top},
         'slow');
 });
+
+
+$("#art").click(function(){
+    $('html, body').animate({
+        scrollTop: $("#art-div").offset().top},
+        'slow');
+});

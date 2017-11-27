@@ -147,10 +147,75 @@ button:active{
   margin: 0 auto;
 }
 
+a.divClick{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  /* Makes sure the link doesn't get underlined */
+  z-index: 10;
+  /* raises anchor tag above everything else in div */
+  background-color: white;
+  /*workaround to make clickable in IE */
+  opacity: 0;
+  /*workaround to make clickable in IE */
+  filter: alpha(opacity=0);
+  /*workaround to make clickable in IE */
+}
+
 .itemBox{
   background-color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  height: 24em;
 }
 
 .itemBox p{
   color: rgba(93, 80, 176, 1);
+}
+
+#alexa{
+  padding: 1em;
+}
+
+
+#art-div{
+  background-color: rgba(54, 47, 102, 1);
+  width: 100%;
+  text-align: center;
+  font-size: 1.6vw;
+  font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: rgba(155, 145, 216, 1);
+  margin-bottom: 5em;
+}
+
+
+#art-div:before, #art-div:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+}
+
+#art-div:after {
+  border-top-color: rgba(54, 47, 102, 1);
+  border-width: 50px;
+  margin-left: -1.9em;
+  margin-top: 2em;
+}
+
+#footer{
+  height: 7em;
+  background-color: rgba(36, 36, 36, 1);
+}
+
+#footer-end{
+  height: 2em;
+  background-color: rgba(25, 25, 25, 1);
 }
