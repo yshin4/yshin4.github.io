@@ -168,7 +168,7 @@ a.divClick{
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
   margin-bottom: 0.5em;
-  height: 24em;
+  height: 24.5em;
 }
 
 .itemBox p{
@@ -189,7 +189,7 @@ a.divClick{
   padding-top: 2em;
   padding-bottom: 2em;
   color: rgba(155, 145, 216, 1);
-  margin-bottom: 5em;
+  margin-bottom: -1px;
 }
 
 
@@ -218,4 +218,32 @@ a.divClick{
 #footer-end{
   height: 2em;
   background-color: rgba(25, 25, 25, 1);
+}
+
+.mySlides {
+  display: none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 18px;
+  width: 13px;
+  padding: 0;
+}
+
+#sliderContainer1{
+  background-color: white;
+  max-width: 20em;
+}
+
+#sliderContainer2{
+  background-color: white;
+  max-width: 40em;
+}
+
+.w3-xxlarge{
+  color: rgba(230,230,230,1);
 }
