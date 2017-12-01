@@ -205,9 +205,9 @@
     <div id="sliderContainer1" class="w3-content w3-display-container">
       <img class="mySlides" src="src/images/honeycomb.png" style="width:100%">
       <img class="mySlides" src="src/images/lapis.png" style="width:100%">
-      <img class="mySlides" src="src/images/combination.png" style="width:100%">
+      <img class="mySlides" src="src/images/bored.png" style="width:100%">
       <img class="mySlides" src="src/images/spiky.jpg" style="width:100%">
-      <img class="mySlides" src="src/images/glenstid.gif" style="width:100%">
+      <img class="mySlides" src="src/images/combination.png" style="width:100%">
       <img class="mySlides" src="src/images/ryunmiryu.gif" style="width:100%">
       <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
         <div class="w3-left w3-hover-text-gray" onclick="plusDivs(-1)">&#10094;</div>
@@ -260,25 +260,39 @@
     <br>
   </div>
 
-  <div class="w3-container">
-  </div>
-
   <div id="footer" class="w3-container">
+    <div id="contact">
+      <a href="https://github.com/yshin4" target="_blank" class="fa fa-github"></a>
+      <a href="https://www.linkedin.com/in/jen-shin/" target="_blank" class="fa fa-linkedin"></a>
+      <a href="mailto:yshin4@lion.lmu.edu" class="fa fa-envelope"></a>
+      <a href="tel:1-213-505-2477" class="fa fa-phone"></a>
+      <a id="fileIcon" onclick="document.getElementById('modalResume').style.display='block'" class="fa fa-file-text"></a>
+      <a href="src/resume/Jen_Resume.docx" class="fa fa-download"></a>
+       <div class="info">
+        <a href="https://github.com/yshin4" style="text-decoration: none;">GitHub</a> |
+        <a href="https://www.linkedin.com/in/jen-shin/" style="text-decoration: none;">LinkedIn</a> |
+        <a href="mailto:yshin4@lion.lmu.edu" style="text-decoration: none;">E-Mail</a> |
+        <a href="tel:1-213-505-2477" style="text-decoration: none;">Phone</a> |
+        <button id="resumeButton" onclick="document.getElementById('modalResume').style.display='block'">View Resume | </button>
+        <div id="modalResume" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <embed id="resume" src="src/resume/Jen_Resume_pdf_3.7.pdf"/>
+          </div>
+        </div>
+        <a href="src/resume/Jen_Resume.docx" style="text-decoration: none;">Download Resume</a>
+      </div>
+      <div class="hiddenInfo" id="phoneInfo">
+        213. 505. 2477
+      </div>
+      <div class="hiddenInfo" id="emailInfo">
+        yshin4@lion.lmu.edu
+      </div>
+    </div>
   </div>
 
   <div id="footer-end" class="w3-container">
+    ⓒ2017 Jen Shin
   </div>
-
-  <!-- <div id="contact">
-    <a href="https://github.com/yshin4" target="_blank" class="fa fa-github"></a>
-    <a href="https://www.linkedin.com/in/jen-shin-421a0511a/" target="_blank" class="fa fa-linkedin"></a>
-    <a href="mailto:yshin4@lion.lmu.edu" class="fa fa-envelope"></a>
-    <a href="tel:1-213-505-2477" class="fa fa-phone"></a>
-    <a href="src/resume/Jen_Resume.docx" class="fa fa-download"></a>
-     <div class="info" id="phone-info">
-      <i>Phone:</i> <font color:"gray" style:"none"> 213.505.2477 </font>
-    </div>
-  </div> -->
 
   <div id="tag">
   </div>

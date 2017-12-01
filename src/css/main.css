@@ -68,7 +68,7 @@ img{
   margin-bottom: 2em;
 }
 
-button{
+button.w3-mobile{
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
   color: rgba(93, 80, 176, 1);
@@ -81,12 +81,12 @@ button{
   border-radius: 4px;
 }
 
-button:hover{
+button.w3-mobile:hover{
   background-color: rgba(93, 80, 176, 1);
   color: rgba(255, 255, 255, 1);
 }
 
-button:active{
+button.w3-mobile:active{
   background-color: rgba(93, 80, 176, 0.7);
   color: rgba(255, 255, 255, 1);
 }
@@ -181,7 +181,7 @@ a.divClick{
 
 
 #art-div{
-  color: rgba(120,120,120,1);
+  color: white;
   background-color: rgba(54, 47, 102, 1);
   width: 100%;
   text-align: center;
@@ -189,7 +189,6 @@ a.divClick{
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
   padding-top: 2em;
   padding-bottom: 2em;
-  margin-bottom: -1px;
 }
 
 
@@ -208,16 +207,6 @@ a.divClick{
   border-width: 50px;
   margin-left: -1.9em;
   margin-top: 2em;
-}
-
-#footer{
-  height: 7em;
-  background-color: rgba(36, 36, 36, 1);
-}
-
-#footer-end{
-  height: 2em;
-  background-color: rgba(25, 25, 25, 1);
 }
 
 .mySlides {
@@ -250,5 +239,85 @@ a.divClick{
 }
 
 .w3-xxlarge{
-  color: rgba(230,230,230,1);
+  color: rgba(180,180,180,1);
+}
+
+
+#footer{
+  height: 14.5em;
+  padding: 5em;
+  background-color: rgba(36, 36, 36, 1);
+}
+
+
+.fa {
+  font-size: 1em !important;
+  padding: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 18px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid  rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.fa:hover{
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(116, 101, 201, 1);
+  border: 2px solid  rgba(116, 101, 201, 1);
+}
+
+.info{
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 3em;
+  font-size: 0.7em;
+}
+
+.hiddenInfo{
+  visibility: hidden;
+  text-align: center;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.fa-phone:hover ~ #phoneInfo{
+  visibility: visible;
+  padding-top: 1.4em;
+}
+
+.fa-envelope:hover ~ #emailInfo{
+  visibility: visible;
+}
+
+.w3-modal-content{
+  width: 100px;
+}
+
+#fileIcon{
+  cursor:pointer;
+}
+
+#resumeButton{
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#resume{
+  width: 100%;
+  height: 800px;
+}
+
+#footer-end{
+  height: 2.5em;
+  background-color: rgba(25, 25, 25, 1);
+  text-align: center;
+  color: rgba(130,130,130,1);
+  font-size: 0.6em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
