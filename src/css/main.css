@@ -181,6 +181,7 @@ a.divClick{
 
 
 #art-div{
+  color: rgba(120,120,120,1);
   background-color: rgba(54, 47, 102, 1);
   width: 100%;
   text-align: center;
@@ -188,7 +189,6 @@ a.divClick{
   font-family: Palatino, ‘Book Antiqua’, Georgia, Garamond, ‘Times New Roman’, Times, serif;
   padding-top: 2em;
   padding-bottom: 2em;
-  color: rgba(155, 145, 216, 1);
   margin-bottom: -1px;
 }
 
@@ -242,6 +242,11 @@ a.divClick{
 #sliderContainer2{
   background-color: white;
   max-width: 40em;
+}
+
+#sliderContainer3{
+  background-color: white;
+  max-width: 854px;
 }
 
 .w3-xxlarge{

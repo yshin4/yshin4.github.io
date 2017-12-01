@@ -41,7 +41,7 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("photoshop");
-  if (n >= x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
@@ -79,5 +79,33 @@ function showDivsBlender(n) {
   }
   x[slideIndexBlender-1].style.display = "block";  
   dots[slideIndexBlender-1].className += " w3-white";
+}
+
+
+var slideIndexVideo = 1;
+showDivsVideo(slideIndexVideo);
+
+function plusDivsVideo(n) {
+  showDivsVideo(slideIndexVideo += n);
+}
+
+function currentDivVideo(n) {
+  showDivsVideo(slideIndexVideo = n);
+}
+
+function showDivsVideo(n) {
+  var i;
+  var x = document.getElementsByClassName("mySliderVideo");
+  var dots = document.getElementsByClassName("video");
+  if (n > x.length) {slideIndexVideo = 1}    
+  if (n < 1) {slideIndexVideo = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndexVideo-1].style.display = "block";  
+  dots[slideIndexVideo-1].className += " w3-white";
 }
 
