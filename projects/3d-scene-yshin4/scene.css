@@ -1,0 +1,12 @@
+canvas {
+    border: solid 1px rgb(200, 200, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ChangeColor {
+    margin-top: 10px;
+    margin-left: 11px;
+    padding: 10px;
+}
