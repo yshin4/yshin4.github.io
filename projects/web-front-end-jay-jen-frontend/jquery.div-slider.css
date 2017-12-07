@@ -1,0 +1,18 @@
+.slider{
+    border: 1px solid black;
+    width:400px;
+    height:20px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.knob{
+  border: 1px solid black;
+  width:20px;
+  height:20px;
+  z-index: 1;
+  left: auto;
+  background: gray;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yahoo Weather</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12"><h3>Yahoo Weather</h3></div>
+      </div>
+
+      <div class="search-section">
+        <form class="search-group" role="search" id="Forecast">
+          <div class="form-group">
+            <input id="city" type="text" class="form-control" placeholder="Enter City" required>
+          </div>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#forecast"><button id="search-button1" type="submit" class="btn btn-link">Display Forecast</button></a></li>
+
+            <li><a href="#astronomy"><button id="search-button2" type="submit" class="btn btn-link">Sunset and Sunrise</button></a></li>
+
+            <li><a href="#link"><button id="search-button3" type="submit" class="btn btn-link">More Information</button></a></li>
+          </ul>
+          <div class="tab-content">
+
+            <div id="forecast" class="tab-pane fade in active">
+              <div class="result-container1">
+              </div>
+              <br>
+
+              <div class="container">
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day1" style="width:8em">
+                   <div class="day1-day">
+                     Mon
+                   </div>
+                 </button>
+                 <div id="day1" class="collapse">
+                   <div class="day1-forecast">
+                   </div>
+                 </div>
+
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day2" style="width:8em">
+                   <div class="day2-day">
+                     Tue
+                   </div>
+                 </button>
+                 <div id="day2" class="collapse">
+                   <div class="day2-forecast">
+                   </div>
+                 </div>
+
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day3" style="width:8em">
+                   <div class="day3-day">
+                     Wed
+                   </div>
+                 </button>
+                 <div id="day3" class="collapse">
+                   <div class="day3-forecast">
+                   </div>
+                 </div>
+
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day4" style="width:8em">
+                   <div class="day4-day">
+                     Thu
+                   </div>
+                 </button>
+                 <div id="day4" class="collapse">
+                   <div class="day4-forecast">
+                   </div>
+                 </div>
+
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day5" style="width:8em">
+                   <div class="day5-day">
+                     Fri
+                   </div>
+                 </button>
+                 <div id="day5" class="collapse">
+                   <div class="day5-forecast">
+                   </div>
+                 </div>
+
+                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#day6" style="width:8em">
+                   <div class="day6-day">
+                     Sat
+                   </div>
+                 </button>
+                 <div id="day6" class="collapse">
+                   <div class="day6-forecast">
+                   </div>
+                 </div>
+
+              </div><br>
+
+              <div class="conatiner">
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Wind Forecast</a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="result-container2">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse2">Atmosphere</a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="result-container3">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="astronomy" class="tab-pane fade">
+              <div class = "result-container4">
+              </div>
+              <div class="result-container5">
+              </div>
+            </div>
+
+            <div id="link" class="tab-pane fade">
+              <div class = "result-container6">
+              </div>
+            </div>
+
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="yahooWeather.js"></script>
+
+  </body>
+</html>
