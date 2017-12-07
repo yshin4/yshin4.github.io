@@ -5,19 +5,19 @@
     blueCard.addEventListener('load', () => {
         SampleSpriteLibrary.cards.ready = true;
     });
-    blueCard.src = 'image/blueCard.png';
+    blueCard.src = 'image/bluecard.png';
 
     let redCard = new Image();
     redCard.addEventListener('load', () => {
         SampleSpriteLibrary.cards.ready = true;
     });
-    redCard.src = 'image/redCard.png';
+    redCard.src = 'image/redcard.png';
 
     let yellowCard = new Image();
     yellowCard.addEventListener('load', () => {
         SampleSpriteLibrary.cards.ready = true;
     });
-    yellowCard.src = 'image/yellowCard.png';
+    yellowCard.src = 'image/yellowcard.png';
 
     SampleSpriteLibrary.cards = (cards) => {
         let renderingContext = cards.renderingContext;
