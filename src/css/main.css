@@ -115,7 +115,7 @@ button.w3-mobile:active{
 }
 
 #about-div:after {
-  border-top-color: rgba(0, 0, 0, 0.8);
+  border-top-color: rgba(0, 0, 0, 0.78);
   border-width: 50px;
   margin-left: -1.9em;
   margin-top: 2em;
