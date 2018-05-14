@@ -235,7 +235,10 @@ a.divClick{
 
 #sliderContainer3{
   background-color: white;
-  max-width: 854px;
+}
+
+.mySliderVideo{
+  min-height: 20em;
 }
 
 .w3-xxlarge{
@@ -244,8 +247,8 @@ a.divClick{
 
 
 #footer{
-  height: 14.5em;
   padding: 5em;
+  padding-bottom: 1em;
   background-color: rgba(36, 36, 36, 1);
 }
 
